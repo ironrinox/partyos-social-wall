@@ -1,0 +1,76 @@
+body.wall-body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #151520, #050507);
+  color: #f5f5f5;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.overlay {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  letter-spacing: 3px;
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wall-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 80vh;
+}
+
+.photo-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row; /* scritta laterale */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.photo-card img {
+  width: auto;
+  height: 100%;
+  max-width: 70%;
+  max-height: 100%;
+  object-fit: contain; /* l'immagine non viene tagliata */
+  border-radius: 16px;
+  display: block;
+  margin-right: 20px; /* margine tra immagine e testo */
+}
+
+.photo-card p {
+  font-family: 'Playfair Display', serif;
+  color: #f5f5f5; /* meno invasivo rispetto al giallo */
+  font-size: 28px;
+  text-align: left;
+  margin: 0;
+  max-width: 25%;
+  word-wrap: break-word;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay { font-size: 6vw; }
+  .photo-card { width: 90vw; height: 70vh; flex-direction: column; padding: 15px; }
+  .photo-card img { max-width: 100%; max-height: 60%; margin: 0 0 15px 0; }
+  .photo-card p { font-size: 4vw; max-width: 100%; text-align: center; }
+}

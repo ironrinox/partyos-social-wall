@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>PartyOS Wall</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/common/common.css">
+  <link rel="stylesheet" href="wall.css">
+</head>
+<body class="wall-body">
+  <div class="overlay" id="overlay">My Wall</div>
+
+  <div class="wall-container">
+    <div class="photo-card" id="wall">
+      <img src="" alt="Foto" id="wall-img">
+      <p id="wall-text"></p>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="wall.js"></script>
+</body>
+</html>
