@@ -29,7 +29,7 @@ app.use("/uploads", express.static(UPLOAD_DIR));
 let pendingPhotos = [];
 let wallState = {
   mode: "slideshow",
-  overlay: "Mario & Giulia",
+  overlay: "My PartyOS Social Wall",
   bpm: 120,
   locked: false,
   activePhoto: null
