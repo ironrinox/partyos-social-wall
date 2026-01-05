@@ -62,6 +62,7 @@ PARTYOS-SOCIAL-WALL/
 ├─ server.js       # Node.js backend
 ├─ package.json
 └─ package-lock.json
+```
 
 ---
 
